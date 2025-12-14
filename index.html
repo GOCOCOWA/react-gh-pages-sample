@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+ <script>
+  const data=[
+    {
+      id: 1,
+      content:"aa"
+    },
+    {
+      id: 2,
+      content:"bb"
+    }
+  ];
+  let num = data.length;
+  function addItem(content){
+    num++;
+    data.push({
+      id:num,
+      content:content
+    })
+    console.log(data);
+  }
+  addItem("cc");
+ </script>
+</body>
+ </html>
